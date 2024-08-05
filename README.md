@@ -1,38 +1,60 @@
-Web Automation KASIR AJA
-Create Web Automation untuk KasirAja menggunakan WebDriver.io & Cucumber.
+# Web Automation KASIR AJA
 
-Tech stack
-WebDriver.io
-Cucumber
-HTML Nice Reports
-Install library
-install seluruh library yang dibutuhkan :
+Create Web Automation untuk [KasirAja](https://kasirdemo.vercel.app/login) menggunakan WebDriver.io & Cucumber.
 
-  npm install
-How to run ?
-npm run wdio
-Run "All Feature and Test Case" dengan comand :
+## Tech stack
 
-npm run wdio
-Run "only specific feature" dengan comand :
+- [WebDriver.io](https://webdriver.io/docs/gettingstarted)
+- [Cucumber](https://webdriver.io/docs/frameworks/#using-cucumber)
+- [HTML Nice Reports](https://www.npmjs.com/package/wdio-html-nice-reporter)
 
-npm run wdio-login
-npm run wdio-register
-Run "only specific scenario" dengan comand :
+## Install library
 
-npm run wdio-negative
-*Untuk detail script lainnya dapat dilihat pada file package.json
+- install seluruh library yang dibutuhkan :
 
-Reporting
-Reports secara menyeluruh akan tersimpan pada direktori ./reports/html/html-reports
+  ```bash
+    npm install
+  ```
 
-Di dalam direktori tersebut terdapat :
+## How to run ?
 
-File HTML report untuk masing-masing feature.
-Satu file HTML Master Report yang merupakan gabungan dari seluruh feature.
-Setiap kali ditemukan hasil failed saat menjalankan sebuah Test Case, akan otomatis tercapture dan disimpan pada direktori ./reports/screenshot/ dengan nama file berdasarkan timestamp.
+- Run **"All Feature and Test Case"** dengan comand :
+
+  ```bash
+  npm run wdio
+  ```
+
+- Run **"only specific feature"** dengan comand :
+
+  ```bash
+  npm run wdio-login
+  ```
+
+  ```bash
+  npm run wdio-register
+  ```
+
+- Run **"only specific scenario"** dengan comand :
+
+  ```bash
+  npm run wdio-negative
+  ```
+
+**Untuk detail script lainnya dapat dilihat pada file **package.json***
+
+## Reporting
+
+- Reports secara menyeluruh akan tersimpan pada direktori **./reports/html/html-reports**
+  
+- Di dalam direktori tersebut terdapat :
+  - File HTML report untuk masing-masing feature.
+  - Satu file HTML **Master Report** yang merupakan gabungan dari seluruh feature.
+  
+- Setiap kali ditemukan hasil failed saat menjalankan sebuah Test Case, akan otomatis tercapture dan disimpan pada direktori **./reports/screenshot/** dengan nama file berdasarkan timestamp.
 
 Berikut spesifik direktorinya :
 
+```text
   html-reports  : "/reports/html/html-reports" --> open file.html pada browser
   screenshot    : "/reports/screenshot/"
+```
